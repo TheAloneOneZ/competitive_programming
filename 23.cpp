@@ -30,6 +30,7 @@ void merge(int* arr, int l, int r, int mid)
 }
 void merge_sort(int* arr, int l, int r)
 {
+
     if (l == r)
         return;
     int mid = (l + r) / 2;
