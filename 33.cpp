@@ -15,12 +15,10 @@ int main()
         marks[m].insert(s);
     }
 
-    for (int i = 100; i >= 0; i--) {
-        if (marks[i].size()) {
+    for (int i = 100; i >= 0; i--)
+        if (marks[i].size())
             for (string c : marks[i])
                 cout << c << " " << i << endl;
-        }
-    }
 
     return 0;
 }
