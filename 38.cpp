@@ -8,9 +8,9 @@ void bubble_sort(int* arr, int n)
 
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < n; j++) {
-            /* if (comparator(arr[j], arr[j + 1], [](int a, int b) -> bool { return a > b ? true : false; })) { */
-            /*     swap(arr[j], arr[j + 1]); */
-            /* } */
+            if (comparator(arr[j], arr[j + 1], [](int a, int b) -> bool { return a > b ? true : false; })) {
+                swap(arr[j], arr[j + 1]);
+            }
             /* if (j + 1 < n && arr[j] > arr[j + 1]) { */
             /*     int t = arr[j]; */
             /*     arr[j] = arr[j + 1]; */
